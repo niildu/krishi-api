@@ -1,12 +1,6 @@
 package com.cropaccounting.krishi.api.clientapi.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
-import com.cropaccounting.krishi.api.clientapi.converter.LocalDateTimeDeserializer;
-import com.cropaccounting.krishi.api.clientapi.converter.LocalDateTimeSerializer;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
 

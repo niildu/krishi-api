@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Locale;
 
-import org.slf4j.LoggerFactory;
+//import org.slf4j.LoggerFactory;
 
 import com.cropaccounting.krishi.api.clientapi.model.Blocks;
 import com.cropaccounting.krishi.api.clientapi.model.Crops;
@@ -76,7 +76,7 @@ public interface KrishiAPI {
 	}
 
 	static class Status500Decoder implements ErrorDecoder {
-		private final org.slf4j.Logger logger = LoggerFactory.getLogger(getClass());
+//		private final org.slf4j.Logger logger = LoggerFactory.getLogger(getClass());
 
 //		@Override
 		public Exception decode(String methodKey, Response response) {
@@ -89,7 +89,7 @@ public interface KrishiAPI {
 				try {
 					body = Util.toString(response.body().asReader());
 				} catch (IOException ignored) { // NOPMD
-					logger.debug(ignored.getMessage());
+//					logger.debug(ignored.getMessage());
 				}
 			}
 			/*
